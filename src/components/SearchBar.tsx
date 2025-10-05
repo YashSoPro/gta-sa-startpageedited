@@ -10,7 +10,7 @@ export interface CustomEngine {
 
 // Define search placeholders as a constant to avoid recreation on each render
 const SEARCH_PLACEHOLDERS: Record<string, string> = {
-  searxng: "search SearXNG",
+  searxng: "search DuckDuckGo",
   youtube: "search YouTube",
   images: "search Images",
   lucky: "I'm Feeling Lucky",
