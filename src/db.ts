@@ -4,6 +4,8 @@ const initWebsites = [
   { name: "YouTube", link: "https://www.youtube.com/" },
   { name: "Gmail", link: "https://mail.google.com/" },
   { name: "HiAnime", link: "https://hianime.to/home" },
+  { name: "Cartoons", link: "https://watchanimeworld.in/" },
+  { name: "Github", link: "https://github.com/" },
 ];
 
 interface Website {
