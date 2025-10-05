@@ -10,7 +10,7 @@ interface ToggleSearchEnginesProps {
 
 // Define built-in engines as a constant to avoid recreation on each render
 const BUILT_IN_ENGINES: SearchEngines[] = [
-  "searxng",
+  "duckduckgo",
   "youtube",
   "images",
   "lucky",
