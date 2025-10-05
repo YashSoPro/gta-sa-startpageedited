@@ -60,19 +60,21 @@ export default function SearchBar({
 
     // Handle built-in search engines
     switch (search) {
-      case "searxng":
-        window.location.href = `https://searx.tiekoetter.com/search?q=${query}`;
-        break;
-      case "youtube":
-        window.location.href = `https://www.youtube.com/results?search_query=${query}`;
-        break;
-      case "images":
-        window.location.href = `https://searx.tiekoetter.com/search?q=!goi+${query}`;
-        break;
-      case "lucky":
-        window.location.href = `https://searx.tiekoetter.com/search?q=!!+${query}`;
-        break;
-      default:
+  case "duckduckgo":
+    window.location.href = `https://duckduckgo.com/?q=${query}`;
+    break;
+  case "youtube":
+    window.location.href = `https://www.youtube.com/results?search_query=${query}`;
+    break;
+  case "images":
+    window.location.href = `https://duckduckgo.com/?q=${query}&iax=images&ia=images`;
+    break;
+  case "lucky":
+    window.location.href = `https://duckduckgo.com/?q=${query}&kp=-2&k1=-1&t=hk&ia=web&df=lucky`; // pseudo "I'm Feeling Lucky"
+    break;
+  default:
+    console.log("Unknown search engine");
+    }
         // Handle custom search engines
         const customEngine = customEngines.find(
           (engine) => engine.id === search
